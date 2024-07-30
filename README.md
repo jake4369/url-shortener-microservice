@@ -25,7 +25,9 @@ cd url-shortener-microservice
 
 Next, install the necessary dependencies. Make sure you have Node.js and npm installed. You can install the dependencies by running:
 
-npm install or npm i
+```
+npm install
+```
 
 ### Step 3: Set Up MongoDB
 
@@ -37,14 +39,18 @@ Once MongoDB is installed, start the MongoDB service
 
 Create a .env file in the root directory of the project. This file will hold your environment variables, including your MongoDB connection string. Add the following content to the .env file:
 
+```
 MONGO_URI=mongodb://localhost:27017/urlshortener
 PORT=3000
+```
 
 ### Step 5: Run the Application
 
 Start the application by running:
 
+```
 npm start
+```
 
 ### Step 6: Test the Application
 
