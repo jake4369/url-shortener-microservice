@@ -16,8 +16,10 @@ Here's a step-by-step guide:
 
 First, clone the project repository to your local machine. Open a terminal and run:
 
+```
 git clone https://github.com/jake4369/url-shortener-microservice.git
 cd url-shortener-microservice
+```
 
 ### Step 2: Install Dependencies
 
