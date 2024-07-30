@@ -56,4 +56,26 @@ const createUrl = (req, res) => {
   }
 };
 
-module.exports = { createUrl };
+const redirectUrl = async (req, res) => {
+  try {
+    const { short_url } = req.params;
+
+    const urlDoc = await URL.findOne({ short_url });
+
+    if (!urlDoc) {
+      return res.json({
+        message: "Url not found",
+      });
+    }
+
+    const original_url = urlDoc.original_url;
+
+    res.redirect(original_url);
+  } catch (error) {
+    res.json({
+      error: "Internal server error",
+    });
+  }
+};
+
+module.exports = { createUrl, redirectUrl };
