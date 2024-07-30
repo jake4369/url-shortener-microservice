@@ -35,6 +35,12 @@ Ensure you have MongoDB installed and running on your local machine. You can dow
 
 Once MongoDB is installed, start the MongoDB service
 
+```
+mongodb
+```
+
+Alternatively, if you are using MongoDB Atlas, you can create a database cluster there and get the connection string.
+
 ### Step 4: Configure Environment Variables
 
 Create a .env file in the root directory of the project. This file will hold your environment variables, including your MongoDB connection string. Add the following content to the .env file:
@@ -43,6 +49,8 @@ Create a .env file in the root directory of the project. This file will hold you
 MONGO_URI=mongodb://localhost:27017/urlshortener
 PORT=3000
 ```
+
+Replace mongodb://localhost:27017/urlshortener with your MongoDB connection string if you are using MongoDB Atlas.
 
 ### Step 5: Run the Application
 
